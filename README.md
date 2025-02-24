@@ -32,7 +32,7 @@ However, this approach led to a significant drop in performance, with accuracy d
 Next, I experimented with Weighting of Neighbors, where closer neighbors received higher weights in the decision-making process. This improvement resulted in a higher accuracy of **46%**.
 
 ### Example of the results:
-![Figure_1](https://github.com/user-attachments/assets/e4ec18a6-7e4f-4921-b125-43ec950f2f1c)
+![Figure_1](https://github.com/user-attachments/assets/6915a428-f48b-49b1-95d9-e4e61948fb24)
 
 ### 5. Other Future Improvements
 While PCA, the cosine distance metric, and weighting of neighbors have proven to be important steps in the process, there are several other directions to explore for further performance enhancement, such as:
