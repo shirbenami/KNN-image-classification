@@ -2,18 +2,18 @@
 ![knn-concept](https://github.com/user-attachments/assets/6a75e820-ebfd-4311-a41a-d39105c6eeed)
 
 ## Initial Training Explanation
-Initially, I used the **K-Nearest Neighbors (KNN)** algorithm for image classification on the **CIFAR-10** dataset. The basic model was trained with the default **K=15** value, and the accuracy achieved was **34%**. The model was trained without any preprocessing or hyperparameter optimization.
+Initially, I used the **K-Nearest Neighbors (KNN)** algorithm for image classification on the **CIFAR-10** dataset. The basic model was trained with the **K=18** value, and the accuracy achieved was **34%**. The model was trained without any preprocessing or hyperparameter optimization.
 
 ## Performance Improvement
 After achieving 34% accuracy, I tried several methods to improve the model's performance. The most significant improvement was made by using **PCA (Principal Component Analysis)**.
 
 ### 1. **PCA = 25**
-I used **PCA** to reduce the dimensions and compress the data. I selected **25 components** of **PCA**, so the top 25 components explained **77%** of the variance in the data. This process helped to reduce the dimensionality and remove unnecessary noise from the data.
+I used **PCA** to reduce the dimensions and compress the data. I selected **25 components** of **PCA**, so the top 25 components explained 77% of the variance in the data. This process helped to reduce the dimensionality and remove unnecessary noise from the data.
 
 After applying PCA with **n_components=25**, the accuracy improved significantly to **42.2%**.
 
 ### 2. **Using Cosine Distance Metric**
-I also experimented with changing the distance metric from the default **Euclidean** to **Cosine Distance**. This adjustment improved the accuracy further to **44.58%**.
+I also experimented with changing the distance metric from the default **Euclidean** to **Cosine Distance**. This adjustment improved the accuracy further to **44.68%**.
 
 ### 3. **Using Standardization**
 I attempted to standardize the images using **StandardScaler** to adjust the data to have a mean of 0 and a standard deviation of 1:
