@@ -41,6 +41,6 @@ While PCA, the cosine distance metric, and weighting of neighbors have proven to
 * Increasing the data size through Data Augmentation.
 
 ## Conclusion
-By applying all the methods, the model's accuracy improved from 34% accuracy to 46% - by **35.29%**!.
+By applying all the methods, **the model's accuracy improved from 34% accuracy to 46% - by 35.29%!.**
 The next step will be to explore additional techniques to further improve performance and achieve even higher results.
 
