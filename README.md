@@ -11,12 +11,28 @@ I used **PCA** to reduce the dimensions and compress the data. I selected **25 c
 
 After applying PCA with **n_components=25**, the accuracy improved significantly to **42.2%**.
 
-### 2. **Other Future Improvements**
-While PCA has proven to be an important step in the process, there are several other directions to explore for further performance enhancement, such as:
-- **Using different distance metrics** like **Manhattan** instead of **Euclidean**.
-- **Normalization/Standardization of the data** before training.
-- **Automated selection of K** using **GridSearchCV** to find the optimal K value.
-- **Increasing the data size** through **Data Augmentation**.
+### 2. **Using Cosine Distance Metric**
+I also experimented with changing the distance metric from the default **Euclidean** to **Cosine Distance**. This adjustment improved the accuracy further to **44.58%**.
+
+### 3. **Using Standardization**
+I attempted to standardize the images using **StandardScaler** to adjust the data to have a mean of 0 and a standard deviation of 1:
+```python
+scaler = StandardScaler()
+train_images = scaler.fit_transform(train_images)
+test_images = scaler.transform(test_images)
+```
+However, this approach led to a significant drop in performance, with accuracy decreasing by 44%, resulting in a lower overall accuracy compared to previous experiments.
+
+### 4. Weighting of Neighbors
+Next, I experimented with Weighting of Neighbors, where closer neighbors received higher weights in the decision-making process. This improvement resulted in a higher accuracy of 46%.
+
+### 5. Other Future Improvements
+While PCA, the cosine distance metric, and weighting of neighbors have proven to be important steps in the process, there are several other directions to explore for further performance enhancement, such as:
+
+* Using different distance metrics like Manhattan instead of Euclidean.
+* Normalization/Standardization of the data before training.
+* Automated selection of K using GridSearchCV to find the optimal K value.
+* Increasing the data size through Data Augmentation.
 
 ## Conclusion
 By applying PCA, the model's accuracy improved by 8.2%, reaching **42.2%**. The next step will be to explore additional techniques to further improve performance and achieve even higher results.
