@@ -1,4 +1,5 @@
 # Image Classification Project Using KNN and Performance Improvement
+![knn-concept](https://github.com/user-attachments/assets/6a75e820-ebfd-4311-a41a-d39105c6eeed)
 
 ## Initial Training Explanation
 Initially, I used the **K-Nearest Neighbors (KNN)** algorithm for image classification on the **CIFAR-10** dataset. The basic model was trained with the default **K=15** value, and the accuracy achieved was **34%**. The model was trained without any preprocessing or hyperparameter optimization.
