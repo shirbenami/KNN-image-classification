@@ -1,0 +1,7 @@
+{
+    "n_neighbors": 17,
+    "metric": "cosine",
+    "weights": "distance",
+    "num_images": 10
+  }
+  
